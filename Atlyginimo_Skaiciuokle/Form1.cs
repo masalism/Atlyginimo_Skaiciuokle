@@ -184,16 +184,16 @@ namespace Atlyginimo_Skaiciuokle
             switch (state)
             {
                 case CheckState.Checked:
-                    {
-                        tBoxCopyTax.Visible = true;
-                        gBoxCopyright.Visible = true;
-                        break;
-                    }
+                {
+                    tBoxCopyTax.Visible = true;
+                    gBoxCopyright.Visible = true;
+                    break;
+                }
                 case CheckState.Indeterminate:
                 case CheckState.Unchecked:
-                    {
-                        break;
-                    }
+                {
+                    break;
+                }
             }
         }
 
