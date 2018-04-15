@@ -50,7 +50,7 @@
             this.label36 = new System.Windows.Forms.Label();
             this.labelAutorines = new System.Windows.Forms.Label();
             this.tBoxCopyHands = new System.Windows.Forms.TextBox();
-            this.bSkaiciuotiAutorines = new System.Windows.Forms.Button();
+            this.bCountAuthor = new System.Windows.Forms.Button();
             this.labelAutorinesIRankas = new System.Windows.Forms.Label();
             this.labelAuthorAll = new System.Windows.Forms.Label();
             this.labelAuthorInHands = new System.Windows.Forms.Label();
@@ -83,7 +83,7 @@
             this.labelInsuraceP = new System.Windows.Forms.Label();
             this.labelWorkPriceP = new System.Windows.Forms.Label();
             this.labelIncomeP = new System.Windows.Forms.Label();
-            this.bSkaiciuotiPopierius = new System.Windows.Forms.Button();
+            this.bCountOnPaper = new System.Windows.Forms.Button();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
@@ -111,6 +111,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.bClear = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gBoxCopyright.SuspendLayout();
@@ -121,11 +122,11 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-1, 153);
+            this.tabControl1.Location = new System.Drawing.Point(-1, 173);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1138, 423);
-            this.tabControl1.TabIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1138, 403);
+            this.tabControl1.TabIndex = 8;
             // 
             // tabPage1
             // 
@@ -157,7 +158,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1130, 390);
+            this.tabPage1.Size = new System.Drawing.Size(1130, 370);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Atlyginimas į rankas";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -186,9 +187,9 @@
             this.label23.AutoSize = true;
             this.label23.Location = new System.Drawing.Point(7, 148);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(148, 20);
+            this.label23.Size = new System.Drawing.Size(152, 20);
             this.label23.TabIndex = 50;
-            this.label23.Text = "Atlyginimas į rankas";
+            this.label23.Text = "Atlyginimas į rankas:";
             // 
             // label33
             // 
@@ -274,6 +275,7 @@
             // labelWorkPrice
             // 
             this.labelWorkPrice.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelWorkPrice.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.labelWorkPrice.Location = new System.Drawing.Point(297, 307);
             this.labelWorkPrice.Name = "labelWorkPrice";
             this.labelWorkPrice.Size = new System.Drawing.Size(100, 23);
@@ -296,7 +298,7 @@
             this.gBoxCopyright.Controls.Add(this.label36);
             this.gBoxCopyright.Controls.Add(this.labelAutorines);
             this.gBoxCopyright.Controls.Add(this.tBoxCopyHands);
-            this.gBoxCopyright.Controls.Add(this.bSkaiciuotiAutorines);
+            this.gBoxCopyright.Controls.Add(this.bCountAuthor);
             this.gBoxCopyright.Controls.Add(this.labelAutorinesIRankas);
             this.gBoxCopyright.Controls.Add(this.labelAuthorAll);
             this.gBoxCopyright.Controls.Add(this.labelAuthorInHands);
@@ -352,27 +354,26 @@
             this.tBoxCopyHands.Size = new System.Drawing.Size(100, 26);
             this.tBoxCopyHands.TabIndex = 11;
             this.tBoxCopyHands.Text = "0";
-            this.tBoxCopyHands.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tBoxCopyHands.TextChanged += new System.EventHandler(this.tBoxCopyHands_TextChanged);
             // 
-            // bSkaiciuotiAutorines
+            // bCountAuthor
             // 
-            this.bSkaiciuotiAutorines.Location = new System.Drawing.Point(149, 47);
-            this.bSkaiciuotiAutorines.Name = "bSkaiciuotiAutorines";
-            this.bSkaiciuotiAutorines.Size = new System.Drawing.Size(122, 35);
-            this.bSkaiciuotiAutorines.TabIndex = 31;
-            this.bSkaiciuotiAutorines.Text = "Skaičiuoti";
-            this.bSkaiciuotiAutorines.UseVisualStyleBackColor = true;
-            this.bSkaiciuotiAutorines.Click += new System.EventHandler(this.bSkaiciuotiAutorines_Click);
+            this.bCountAuthor.Location = new System.Drawing.Point(149, 47);
+            this.bCountAuthor.Name = "bCountAuthor";
+            this.bCountAuthor.Size = new System.Drawing.Size(122, 35);
+            this.bCountAuthor.TabIndex = 31;
+            this.bCountAuthor.Text = "Skaičiuoti";
+            this.bCountAuthor.UseVisualStyleBackColor = true;
+            this.bCountAuthor.Click += new System.EventHandler(this.bCountAuthor_Click);
             // 
             // labelAutorinesIRankas
             // 
             this.labelAutorinesIRankas.AutoSize = true;
             this.labelAutorinesIRankas.Location = new System.Drawing.Point(18, 118);
             this.labelAutorinesIRankas.Name = "labelAutorinesIRankas";
-            this.labelAutorinesIRankas.Size = new System.Drawing.Size(110, 20);
+            this.labelAutorinesIRankas.Size = new System.Drawing.Size(114, 20);
             this.labelAutorinesIRankas.TabIndex = 33;
-            this.labelAutorinesIRankas.Text = "Suma į rankas";
+            this.labelAutorinesIRankas.Text = "Suma į rankas:";
             // 
             // labelAuthorAll
             // 
@@ -397,9 +398,9 @@
             this.labelAutorinesUzsakovoSuma.AutoSize = true;
             this.labelAutorinesUzsakovoSuma.Location = new System.Drawing.Point(18, 150);
             this.labelAutorinesUzsakovoSuma.Name = "labelAutorinesUzsakovoSuma";
-            this.labelAutorinesUzsakovoSuma.Size = new System.Drawing.Size(238, 20);
+            this.labelAutorinesUzsakovoSuma.Size = new System.Drawing.Size(242, 20);
             this.labelAutorinesUzsakovoSuma.TabIndex = 32;
-            this.labelAutorinesUzsakovoSuma.Text = "Užsakovo išlaidos su mokesčiais";
+            this.labelAutorinesUzsakovoSuma.Text = "Užsakovo išlaidos su mokesčiais:";
             // 
             // bCountToHands
             // 
@@ -409,7 +410,7 @@
             this.bCountToHands.TabIndex = 9;
             this.bCountToHands.Text = "Skaičiuoti";
             this.bCountToHands.UseVisualStyleBackColor = true;
-            this.bCountToHands.Click += new System.EventHandler(this.bSkaiciuotiAntPopieriaus_Click);
+            this.bCountToHands.Click += new System.EventHandler(this.bCountToHands_Click);
             // 
             // checkBoxAutorines
             // 
@@ -427,45 +428,45 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(7, 180);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(129, 20);
+            this.label13.Size = new System.Drawing.Size(133, 20);
             this.label13.TabIndex = 20;
-            this.label13.Text = "Pajamų mokestis";
+            this.label13.Text = "Pajamų mokestis:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(8, 212);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(207, 20);
+            this.label12.Size = new System.Drawing.Size(211, 20);
             this.label12.TabIndex = 19;
-            this.label12.Text = "Sodra. Sveikatos draudimas";
+            this.label12.Text = "Sodra. Sveikatos draudimas:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(8, 244);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(234, 20);
+            this.label11.Size = new System.Drawing.Size(238, 20);
             this.label11.TabIndex = 18;
-            this.label11.Text = "Sodra. Pensijų ir soc, draudimas";
+            this.label11.Text = "Sodra. Pensijų ir soc, draudimas:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(8, 276);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(202, 20);
+            this.label10.Size = new System.Drawing.Size(206, 20);
             this.label10.TabIndex = 17;
-            this.label10.Text = "Darbdavio mokesčiai sodrai";
+            this.label10.Text = "Darbdavio mokesčiai sodrai:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(8, 308);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(140, 20);
+            this.label9.Size = new System.Drawing.Size(144, 20);
             this.label9.TabIndex = 16;
-            this.label9.Text = "Darbo vietos kaina";
+            this.label9.Text = "Darbo vietos kaina:";
             // 
             // checkBoxExtraH
             // 
@@ -484,7 +485,6 @@
             this.tBoxOnPaper.Size = new System.Drawing.Size(100, 26);
             this.tBoxOnPaper.TabIndex = 7;
             this.tBoxOnPaper.Text = "0";
-            this.tBoxOnPaper.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tBoxOnPaper.TextChanged += new System.EventHandler(this.tBoxOnPaper_TextChanged);
             // 
             // label8
@@ -515,7 +515,7 @@
             this.tabPage2.Controls.Add(this.labelInsuraceP);
             this.tabPage2.Controls.Add(this.labelWorkPriceP);
             this.tabPage2.Controls.Add(this.labelIncomeP);
-            this.tabPage2.Controls.Add(this.bSkaiciuotiPopierius);
+            this.tabPage2.Controls.Add(this.bCountOnPaper);
             this.tabPage2.Controls.Add(this.label45);
             this.tabPage2.Controls.Add(this.label46);
             this.tabPage2.Controls.Add(this.label47);
@@ -527,7 +527,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1130, 390);
+            this.tabPage2.Size = new System.Drawing.Size(1130, 370);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Atlyginimas ant popieriaus";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -546,9 +546,8 @@
             this.tBoxHandsCopy.Location = new System.Drawing.Point(442, 69);
             this.tBoxHandsCopy.Name = "tBoxHandsCopy";
             this.tBoxHandsCopy.Size = new System.Drawing.Size(100, 26);
-            this.tBoxHandsCopy.TabIndex = 77;
+            this.tBoxHandsCopy.TabIndex = 11;
             this.tBoxHandsCopy.Text = "0";
-            this.tBoxHandsCopy.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tBoxHandsCopy.TextChanged += new System.EventHandler(this.tBoxHandsCopy_TextChanged);
             // 
             // label15
@@ -556,9 +555,9 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(9, 72);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(365, 20);
+            this.label15.Size = new System.Drawing.Size(369, 20);
             this.label15.TabIndex = 76;
-            this.label15.Text = "+ atlyginimas gautas į rankas per autorines sutartis";
+            this.label15.Text = "+ atlyginimas gautas į rankas per autorines sutartis:";
             // 
             // label14
             // 
@@ -584,9 +583,9 @@
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(10, 174);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(193, 20);
+            this.label16.Size = new System.Drawing.Size(197, 20);
             this.label16.TabIndex = 73;
-            this.label16.Text = "Atlyginimas ant popieriaus";
+            this.label16.Text = "Atlyginimas ant popieriaus:";
             // 
             // label17
             // 
@@ -672,6 +671,7 @@
             // labelWorkPriceP
             // 
             this.labelWorkPriceP.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelWorkPriceP.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.labelWorkPriceP.Location = new System.Drawing.Point(442, 331);
             this.labelWorkPriceP.Name = "labelWorkPriceP";
             this.labelWorkPriceP.Size = new System.Drawing.Size(100, 23);
@@ -687,60 +687,60 @@
             this.labelIncomeP.TabIndex = 62;
             this.labelIncomeP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // bSkaiciuotiPopierius
+            // bCountOnPaper
             // 
-            this.bSkaiciuotiPopierius.Location = new System.Drawing.Point(133, 114);
-            this.bSkaiciuotiPopierius.Name = "bSkaiciuotiPopierius";
-            this.bSkaiciuotiPopierius.Size = new System.Drawing.Size(122, 35);
-            this.bSkaiciuotiPopierius.TabIndex = 55;
-            this.bSkaiciuotiPopierius.Text = "Skaičiuoti";
-            this.bSkaiciuotiPopierius.UseVisualStyleBackColor = true;
-            this.bSkaiciuotiPopierius.Click += new System.EventHandler(this.bSkaiciuotiPopierius_Click);
+            this.bCountOnPaper.Location = new System.Drawing.Point(133, 114);
+            this.bCountOnPaper.Name = "bCountOnPaper";
+            this.bCountOnPaper.Size = new System.Drawing.Size(122, 35);
+            this.bCountOnPaper.TabIndex = 12;
+            this.bCountOnPaper.Text = "Skaičiuoti";
+            this.bCountOnPaper.UseVisualStyleBackColor = true;
+            this.bCountOnPaper.Click += new System.EventHandler(this.bCountOnPaper_Click);
             // 
             // label45
             // 
             this.label45.AutoSize = true;
             this.label45.Location = new System.Drawing.Point(10, 206);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(129, 20);
+            this.label45.Size = new System.Drawing.Size(133, 20);
             this.label45.TabIndex = 61;
-            this.label45.Text = "Pajamų mokestis";
+            this.label45.Text = "Pajamų mokestis:";
             // 
             // label46
             // 
             this.label46.AutoSize = true;
             this.label46.Location = new System.Drawing.Point(11, 238);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(207, 20);
+            this.label46.Size = new System.Drawing.Size(211, 20);
             this.label46.TabIndex = 60;
-            this.label46.Text = "Sodra. Sveikatos draudimas";
+            this.label46.Text = "Sodra. Sveikatos draudimas:";
             // 
             // label47
             // 
             this.label47.AutoSize = true;
             this.label47.Location = new System.Drawing.Point(11, 270);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(234, 20);
+            this.label47.Size = new System.Drawing.Size(238, 20);
             this.label47.TabIndex = 59;
-            this.label47.Text = "Sodra. Pensijų ir soc, draudimas";
+            this.label47.Text = "Sodra. Pensijų ir soc, draudimas:";
             // 
             // label48
             // 
             this.label48.AutoSize = true;
             this.label48.Location = new System.Drawing.Point(11, 302);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(202, 20);
+            this.label48.Size = new System.Drawing.Size(206, 20);
             this.label48.TabIndex = 58;
-            this.label48.Text = "Darbdavio mokesčiai sodrai";
+            this.label48.Text = "Darbdavio mokesčiai sodrai:";
             // 
             // label49
             // 
             this.label49.AutoSize = true;
             this.label49.Location = new System.Drawing.Point(11, 334);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(140, 20);
+            this.label49.Size = new System.Drawing.Size(144, 20);
             this.label49.TabIndex = 57;
-            this.label49.Text = "Darbo vietos kaina";
+            this.label49.Text = "Darbo vietos kaina:";
             // 
             // checkBoxExtraP
             // 
@@ -748,7 +748,7 @@
             this.checkBoxExtraP.Location = new System.Drawing.Point(13, 45);
             this.checkBoxExtraP.Name = "checkBoxExtraP";
             this.checkBoxExtraP.Size = new System.Drawing.Size(287, 24);
-            this.checkBoxExtraP.TabIndex = 54;
+            this.checkBoxExtraP.TabIndex = 10;
             this.checkBoxExtraP.Text = "Papildomas pensijos kaupimas +2%";
             this.checkBoxExtraP.UseVisualStyleBackColor = true;
             // 
@@ -757,9 +757,8 @@
             this.tBoxInHands.Location = new System.Drawing.Point(442, 16);
             this.tBoxInHands.Name = "tBoxInHands";
             this.tBoxInHands.Size = new System.Drawing.Size(100, 26);
-            this.tBoxInHands.TabIndex = 53;
+            this.tBoxInHands.TabIndex = 9;
             this.tBoxInHands.Text = "0";
-            this.tBoxInHands.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tBoxInHands.TextChanged += new System.EventHandler(this.tBoxInHands_TextChanged);
             // 
             // label50
@@ -767,9 +766,9 @@
             this.label50.AutoSize = true;
             this.label50.Location = new System.Drawing.Point(9, 16);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(196, 20);
+            this.label50.Size = new System.Drawing.Size(200, 20);
             this.label50.TabIndex = 56;
-            this.label50.Text = "Įveskite atlyginimą į rankas";
+            this.label50.Text = "Įveskite atlyginimą į rankas:";
             // 
             // label37
             // 
@@ -835,7 +834,6 @@
             this.tBoxInsurance.Size = new System.Drawing.Size(100, 26);
             this.tBoxInsurance.TabIndex = 2;
             this.tBoxInsurance.Text = "0";
-            this.tBoxInsurance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tBoxInsurance.TextChanged += new System.EventHandler(this.tBoxInsurance_TextChanged);
             // 
             // tBoxPension
@@ -845,7 +843,6 @@
             this.tBoxPension.Size = new System.Drawing.Size(100, 26);
             this.tBoxPension.TabIndex = 3;
             this.tBoxPension.Text = "0";
-            this.tBoxPension.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tBoxPension.TextChanged += new System.EventHandler(this.tBoxPension_TextChanged);
             // 
             // tBoxEmploTax
@@ -855,7 +852,6 @@
             this.tBoxEmploTax.Size = new System.Drawing.Size(100, 26);
             this.tBoxEmploTax.TabIndex = 4;
             this.tBoxEmploTax.Text = "0";
-            this.tBoxEmploTax.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tBoxEmploTax.TextChanged += new System.EventHandler(this.tBoxEmploTax_TextChanged);
             // 
             // tBoxCopyTax
@@ -865,7 +861,6 @@
             this.tBoxCopyTax.Size = new System.Drawing.Size(100, 26);
             this.tBoxCopyTax.TabIndex = 5;
             this.tBoxCopyTax.Text = "0";
-            this.tBoxCopyTax.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tBoxCopyTax.TextChanged += new System.EventHandler(this.tBoxCopyTax_TextChanged);
             // 
             // tBoxCopyOrder
@@ -875,7 +870,6 @@
             this.tBoxCopyOrder.Size = new System.Drawing.Size(100, 26);
             this.tBoxCopyOrder.TabIndex = 6;
             this.tBoxCopyOrder.Text = "0";
-            this.tBoxCopyOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tBoxCopyOrder.TextChanged += new System.EventHandler(this.tBoxCopyOrder_TextChanged);
             // 
             // tBoxIncome
@@ -889,7 +883,6 @@
             this.tBoxIncome.TabIndex = 1;
             this.tBoxIncome.Tag = "";
             this.tBoxIncome.Text = "0";
-            this.tBoxIncome.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.tBoxIncome.TextChanged += new System.EventHandler(this.tBoxIncome_TextChanged);
             // 
             // label7
@@ -955,11 +948,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Proc. nustatymas mokesčių apskaiciavimui:";
             // 
+            // bClear
+            // 
+            this.bClear.Location = new System.Drawing.Point(504, 135);
+            this.bClear.Name = "bClear";
+            this.bClear.Size = new System.Drawing.Size(75, 32);
+            this.bClear.TabIndex = 59;
+            this.bClear.Text = "Išvalyti";
+            this.bClear.UseVisualStyleBackColor = true;
+            this.bClear.Click += new System.EventHandler(this.bClear_Click);
+            // 
             // Atlyginimo_Skaiciuokle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1134, 573);
+            this.Controls.Add(this.bClear);
             this.Controls.Add(this.label37);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label27);
@@ -1001,7 +1005,7 @@
         private System.Windows.Forms.GroupBox gBoxCopyright;
         private System.Windows.Forms.Label labelAutorines;
         private System.Windows.Forms.TextBox tBoxCopyHands;
-        private System.Windows.Forms.Button bSkaiciuotiAutorines;
+        private System.Windows.Forms.Button bCountAuthor;
         private System.Windows.Forms.Label labelAutorinesIRankas;
         private System.Windows.Forms.Label labelAutorinesUzsakovoSuma;
         private System.Windows.Forms.Button bCountToHands;
@@ -1070,7 +1074,7 @@
         private System.Windows.Forms.Label labelInsuraceP;
         private System.Windows.Forms.Label labelWorkPriceP;
         private System.Windows.Forms.Label labelIncomeP;
-        private System.Windows.Forms.Button bSkaiciuotiPopierius;
+        private System.Windows.Forms.Button bCountOnPaper;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
@@ -1079,6 +1083,7 @@
         private System.Windows.Forms.CheckBox checkBoxExtraP;
         private System.Windows.Forms.TextBox tBoxInHands;
         private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Button bClear;
     }
 }
 
