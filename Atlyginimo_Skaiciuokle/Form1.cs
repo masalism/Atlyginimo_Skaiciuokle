@@ -23,7 +23,6 @@ namespace Atlyginimo_Skaiciuokle
         public double authorToHands;
         public double authorAll;
         
-
         public Atlyginimo_Skaiciuokle()
         {
             InitializeComponent();
@@ -37,7 +36,6 @@ namespace Atlyginimo_Skaiciuokle
             double.TryParse(tBoxOnPaper.Text, out onPaperTbox);
             double incomeProc, insuranceProc, pensionProc, employerTaxProc;
             GetPercentageTBox(out incomeProc, out insuranceProc, out pensionProc, out employerTaxProc);
-
 
             //Checkboxas papildomai pensijai
             if (checkBoxExtraH.Checked == true)
@@ -299,9 +297,6 @@ namespace Atlyginimo_Skaiciuokle
                 MessageBox.Show("Prašome vesti skaičius.");
                 tBoxHandsCopy.Text = "0";
             }
-        }
-
-        
-    }
-    
+        }  
+    } 
 }
