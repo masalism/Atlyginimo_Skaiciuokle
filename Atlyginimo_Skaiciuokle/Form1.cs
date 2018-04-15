@@ -39,7 +39,7 @@ namespace Atlyginimo_Skaiciuokle
             {
                 case CheckState.Checked:
                 {
-                    tBoxAutoriniaiMokesciaiProc.Visible = true;
+                    tBoxCopyTax.Visible = true;
                     gBoxAutorines.Visible = true;
                     break;
                 }
@@ -56,9 +56,9 @@ namespace Atlyginimo_Skaiciuokle
         {
             double atlyginimas_ant_popieriaus_tbox = 0;
             //Istraukiamas kintamasis atlyginimas ant popieriaus is textboxo 
-            if (IsNumber(tBoxAtlyginimasAntPopieriaus.Text))
+            if (IsNumber(tBoxOnPaper.Text))
             {
-                atlyginimas_ant_popieriaus_tbox = Convert.ToDouble(this.tBoxAtlyginimasAntPopieriaus.Text);
+                atlyginimas_ant_popieriaus_tbox = Convert.ToDouble(this.tBoxOnPaper.Text);
             }
             else
             {
@@ -70,8 +70,9 @@ namespace Atlyginimo_Skaiciuokle
             double pajamu_mokestis_tbox, sveikatos_draudimas_tbox, pensiju_draudimas_tbox, darbdavio_mokesciai_tbox;
             IstraukimasIsTBox(out pajamu_mokestis_tbox, out sveikatos_draudimas_tbox, out pensiju_draudimas_tbox, out darbdavio_mokesciai_tbox);
 
+            
             //Checkboxas papildomai pensijai
-            if (checkBoxPapildomaPensija.Checked == true)
+            if (checkBoxExtraH.Checked == true)
             {
                 pensiju_draudimas_tbox += 2;
 
@@ -87,12 +88,12 @@ namespace Atlyginimo_Skaiciuokle
             darbo_vietos_kaina = Math.Round((atlyginimas_ant_popieriaus_tbox + darbdavio_mokesciai), 2);
 
             //Isvedimas i labeli
-            labelPajamuMokestis.Text = pajamu_mokestis.ToString();
-            labelSveikatosDraudimas.Text = sveikatos_draudimas.ToString();
-            labelPensijuDraudimas.Text = pensiju_draudimas.ToString();
-            labelDarbdavioMokesciaiSodrai.Text = darbdavio_mokesciai.ToString();
-            labelAtlyginimasIRankas.Text = atlyginimas_i_rankas.ToString();
-            labelDarboVietosKaina.Text = darbo_vietos_kaina.ToString();
+            labelIncome.Text = pajamu_mokestis.ToString();
+            labelInsurance.Text = sveikatos_draudimas.ToString();
+            labelPension.Text = pensiju_draudimas.ToString();
+            labelEmplTax.Text = darbdavio_mokesciai.ToString();
+            labelInHands.Text = atlyginimas_i_rankas.ToString();
+            labelWorkPrice.Text = darbo_vietos_kaina.ToString();
         }
         private double recalculate(double atlyginimas_ant_popieriaus, double pajamu_mokestis_tbox)
         {
@@ -103,9 +104,9 @@ namespace Atlyginimo_Skaiciuokle
         private void bSkaiciuotiAutorines_Click(object sender, EventArgs e)
         {
             //Istraukiami kintamieji is textboxo 
-            double autorines_pajamos_tbox = Convert.ToDouble(this.tBoxPajamosAutorines.Text);
-            double autoriniai_mokesciai_tbox = Convert.ToDouble(this.tBoxAutoriniaiMokesciaiProc.Text);
-            double autoriniai_uzsakovo_tbox = Convert.ToDouble(this.tBoxUzsakovoMokesciaiProc.Text);
+            double autorines_pajamos_tbox = Convert.ToDouble(this.tBoxCopyHands.Text);
+            double autoriniai_mokesciai_tbox = Convert.ToDouble(this.tBoxCopyTax.Text);
+            double autoriniai_uzsakovo_tbox = Convert.ToDouble(this.tBoxCopyOrder.Text);
 
             //Mokesciu skaiciavimai su procentais
             autorines_i_rankas = Math.Round((autorines_pajamos_tbox - (autorines_pajamos_tbox / 100 * autoriniai_mokesciai_tbox)), 2);
@@ -120,18 +121,19 @@ namespace Atlyginimo_Skaiciuokle
         private void bSkaiciuotiPopierius_Click(object sender, EventArgs e)
         {
             //Istraukiami kintamaieji atlyginimas i rankas ir autorines i rankas 
-            double atlyginimas_i_rankas_tbox = Convert.ToDouble(this.tBoxAtlyginimasIRankas.Text);
-            double autorines_i_rankas_tbox = Convert.ToDouble(this.tBoxAutorinesIRankas.Text);
+            double atlyginimas_i_rankas_tbox = Convert.ToDouble(this.tBoxInHands.Text);
+            double autorines_i_rankas_tbox = Convert.ToDouble(this.tBoxHandsCopy.Text);
 
             //Kvieciamas metodas kintamuju istraukimui is proc textboxu
             double pajamu_mokestis_tbox, sveikatos_draudimas_tbox, pensiju_draudimas_tbox, darbdavio_mokesciai_tbox;
             IstraukimasIsTBox(out pajamu_mokestis_tbox, out sveikatos_draudimas_tbox, out pensiju_draudimas_tbox, out darbdavio_mokesciai_tbox);
 
             //Checkboxas papildomai pensijai
-            if (checkBoxPapildomaPensijaP.Checked == true)
+            if (checkBoxExtraP.Checked == true)
             {
                 pensiju_draudimas_tbox += 2;
             }
+
 
             if (autorines_i_rankas_tbox > 0 && atlyginimas_i_rankas_tbox > 0)
             {
@@ -172,22 +174,22 @@ namespace Atlyginimo_Skaiciuokle
             }
 
             //Isvedimas i labeli
-            labelPajamuMokestisP.Text = pajamu_mokestis.ToString();
-            labelSveikatosDraudimasP.Text = sveikatos_draudimas.ToString();
-            labelPensijuDraudimasP.Text = pensiju_draudimas.ToString();
-            labelDarbdavioMokesciaiP .Text = darbdavio_mokesciai.ToString();
-            labelAtlyginimasPopierius.Text = atlyginimas_ant_popieriaus.ToString();
-            labelDarboVietosKainaP .Text = darbo_vietos_kaina.ToString();
+            labelIncomeP.Text = pajamu_mokestis.ToString();
+            labelInsuraceP.Text = sveikatos_draudimas.ToString();
+            labelPesionP.Text = pensiju_draudimas.ToString();
+            labelEmployerTax .Text = darbdavio_mokesciai.ToString();
+            labelOnPaper.Text = atlyginimas_ant_popieriaus.ToString();
+            labelWorkPriceP .Text = darbo_vietos_kaina.ToString();
 
         }
 
         //Metodas kintamuju istraukimui is textboxo
         private void IstraukimasIsTBox(out double pajamu_mokestis_tbox, out double sveikatos_draudimas_tbox, out double pensiju_draudimas_tbox, out double darbdavio_mokesciai_tbox)
         {
-            pajamu_mokestis_tbox = Convert.ToDouble(this.tBoxPajamuProc.Text);
-            sveikatos_draudimas_tbox = Convert.ToDouble(this.tBoxSveikatosDraudimasProc.Text);
-            pensiju_draudimas_tbox = Convert.ToDouble(this.tBoxPensijuDraudimasProc.Text);
-            darbdavio_mokesciai_tbox = Convert.ToDouble(this.tBoxDarbdavioMokesciaiProc.Text);
+            pajamu_mokestis_tbox = Convert.ToDouble(this.tBoxIncome.Text);
+            sveikatos_draudimas_tbox = Convert.ToDouble(this.tBoxInsurance.Text);
+            pensiju_draudimas_tbox = Convert.ToDouble(this.tBoxPension.Text);
+            darbdavio_mokesciai_tbox = Convert.ToDouble(this.tBoxEmploTax.Text);
         }
 
         private bool IsNumber(string input)
@@ -201,8 +203,7 @@ namespace Atlyginimo_Skaiciuokle
                 isNumber = false;
 
             }
-
             return isNumber;
-        }
+        }       
     }
 }

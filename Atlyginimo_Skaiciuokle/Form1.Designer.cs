@@ -31,7 +31,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label21 = new System.Windows.Forms.Label();
-            this.labelAtlyginimasIRankas = new System.Windows.Forms.Label();
+            this.labelInHands = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -39,17 +39,17 @@
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.labelDarbdavioMokesciaiSodrai = new System.Windows.Forms.Label();
-            this.labelPensijuDraudimas = new System.Windows.Forms.Label();
-            this.labelSveikatosDraudimas = new System.Windows.Forms.Label();
-            this.labelDarboVietosKaina = new System.Windows.Forms.Label();
-            this.labelPajamuMokestis = new System.Windows.Forms.Label();
+            this.labelEmplTax = new System.Windows.Forms.Label();
+            this.labelPension = new System.Windows.Forms.Label();
+            this.labelInsurance = new System.Windows.Forms.Label();
+            this.labelWorkPrice = new System.Windows.Forms.Label();
+            this.labelIncome = new System.Windows.Forms.Label();
             this.gBoxAutorines = new System.Windows.Forms.GroupBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.labelAutorines = new System.Windows.Forms.Label();
-            this.tBoxPajamosAutorines = new System.Windows.Forms.TextBox();
+            this.tBoxCopyHands = new System.Windows.Forms.TextBox();
             this.bSkaiciuotiAutorines = new System.Windows.Forms.Button();
             this.labelAutorinesIRankas = new System.Windows.Forms.Label();
             this.labelAutorinesUzsakSuma = new System.Windows.Forms.Label();
@@ -62,31 +62,15 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.checkBoxPapildomaPensija = new System.Windows.Forms.CheckBox();
-            this.tBoxAtlyginimasAntPopieriaus = new System.Windows.Forms.TextBox();
+            this.checkBoxExtraH = new System.Windows.Forms.CheckBox();
+            this.tBoxOnPaper = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.tBoxSveikatosDraudimasProc = new System.Windows.Forms.TextBox();
-            this.tBoxPensijuDraudimasProc = new System.Windows.Forms.TextBox();
-            this.tBoxDarbdavioMokesciaiProc = new System.Windows.Forms.TextBox();
-            this.tBoxAutoriniaiMokesciaiProc = new System.Windows.Forms.TextBox();
-            this.tBoxUzsakovoMokesciaiProc = new System.Windows.Forms.TextBox();
-            this.tBoxPajamuProc = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.tBoxHandsCopy = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.labelAtlyginimasPopierius = new System.Windows.Forms.Label();
+            this.labelOnPaper = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -94,23 +78,39 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.labelDarbdavioMokesciaiP = new System.Windows.Forms.Label();
-            this.labelPensijuDraudimasP = new System.Windows.Forms.Label();
-            this.labelSveikatosDraudimasP = new System.Windows.Forms.Label();
-            this.labelDarboVietosKainaP = new System.Windows.Forms.Label();
-            this.labelPajamuMokestisP = new System.Windows.Forms.Label();
+            this.labelEmployerTax = new System.Windows.Forms.Label();
+            this.labelPesionP = new System.Windows.Forms.Label();
+            this.labelInsuraceP = new System.Windows.Forms.Label();
+            this.labelWorkPriceP = new System.Windows.Forms.Label();
+            this.labelIncomeP = new System.Windows.Forms.Label();
             this.bSkaiciuotiPopierius = new System.Windows.Forms.Button();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
-            this.checkBoxPapildomaPensijaP = new System.Windows.Forms.CheckBox();
-            this.tBoxAtlyginimasIRankas = new System.Windows.Forms.TextBox();
+            this.checkBoxExtraP = new System.Windows.Forms.CheckBox();
+            this.tBoxInHands = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.tBoxAutorinesIRankas = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.tBoxInsurance = new System.Windows.Forms.TextBox();
+            this.tBoxPension = new System.Windows.Forms.TextBox();
+            this.tBoxEmploTax = new System.Windows.Forms.TextBox();
+            this.tBoxCopyTax = new System.Windows.Forms.TextBox();
+            this.tBoxCopyOrder = new System.Windows.Forms.TextBox();
+            this.tBoxIncome = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gBoxAutorines.SuspendLayout();
@@ -130,7 +130,7 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.label21);
-            this.tabPage1.Controls.Add(this.labelAtlyginimasIRankas);
+            this.tabPage1.Controls.Add(this.labelInHands);
             this.tabPage1.Controls.Add(this.label23);
             this.tabPage1.Controls.Add(this.label33);
             this.tabPage1.Controls.Add(this.label32);
@@ -138,11 +138,11 @@
             this.tabPage1.Controls.Add(this.label30);
             this.tabPage1.Controls.Add(this.label29);
             this.tabPage1.Controls.Add(this.label28);
-            this.tabPage1.Controls.Add(this.labelDarbdavioMokesciaiSodrai);
-            this.tabPage1.Controls.Add(this.labelPensijuDraudimas);
-            this.tabPage1.Controls.Add(this.labelSveikatosDraudimas);
-            this.tabPage1.Controls.Add(this.labelDarboVietosKaina);
-            this.tabPage1.Controls.Add(this.labelPajamuMokestis);
+            this.tabPage1.Controls.Add(this.labelEmplTax);
+            this.tabPage1.Controls.Add(this.labelPension);
+            this.tabPage1.Controls.Add(this.labelInsurance);
+            this.tabPage1.Controls.Add(this.labelWorkPrice);
+            this.tabPage1.Controls.Add(this.labelIncome);
             this.tabPage1.Controls.Add(this.gBoxAutorines);
             this.tabPage1.Controls.Add(this.bSkaiciuotiAntPopieriaus);
             this.tabPage1.Controls.Add(this.checkBoxAutorines);
@@ -151,8 +151,8 @@
             this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.label10);
             this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.checkBoxPapildomaPensija);
-            this.tabPage1.Controls.Add(this.tBoxAtlyginimasAntPopieriaus);
+            this.tabPage1.Controls.Add(this.checkBoxExtraH);
+            this.tabPage1.Controls.Add(this.tBoxOnPaper);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
@@ -171,15 +171,15 @@
             this.label21.TabIndex = 52;
             this.label21.Text = "€";
             // 
-            // labelAtlyginimasIRankas
+            // labelInHands
             // 
-            this.labelAtlyginimasIRankas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelAtlyginimasIRankas.ForeColor = System.Drawing.Color.ForestGreen;
-            this.labelAtlyginimasIRankas.Location = new System.Drawing.Point(297, 148);
-            this.labelAtlyginimasIRankas.Name = "labelAtlyginimasIRankas";
-            this.labelAtlyginimasIRankas.Size = new System.Drawing.Size(100, 23);
-            this.labelAtlyginimasIRankas.TabIndex = 51;
-            this.labelAtlyginimasIRankas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelInHands.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelInHands.ForeColor = System.Drawing.Color.ForestGreen;
+            this.labelInHands.Location = new System.Drawing.Point(297, 148);
+            this.labelInHands.Name = "labelInHands";
+            this.labelInHands.Size = new System.Drawing.Size(100, 23);
+            this.labelInHands.TabIndex = 51;
+            this.labelInHands.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label23
             // 
@@ -244,50 +244,50 @@
             this.label28.TabIndex = 44;
             this.label28.Text = "€";
             // 
-            // labelDarbdavioMokesciaiSodrai
+            // labelEmplTax
             // 
-            this.labelDarbdavioMokesciaiSodrai.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelDarbdavioMokesciaiSodrai.Location = new System.Drawing.Point(297, 275);
-            this.labelDarbdavioMokesciaiSodrai.Name = "labelDarbdavioMokesciaiSodrai";
-            this.labelDarbdavioMokesciaiSodrai.Size = new System.Drawing.Size(100, 23);
-            this.labelDarbdavioMokesciaiSodrai.TabIndex = 43;
-            this.labelDarbdavioMokesciaiSodrai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelEmplTax.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelEmplTax.Location = new System.Drawing.Point(297, 275);
+            this.labelEmplTax.Name = "labelEmplTax";
+            this.labelEmplTax.Size = new System.Drawing.Size(100, 23);
+            this.labelEmplTax.TabIndex = 43;
+            this.labelEmplTax.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // labelPensijuDraudimas
+            // labelPension
             // 
-            this.labelPensijuDraudimas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelPensijuDraudimas.Location = new System.Drawing.Point(297, 243);
-            this.labelPensijuDraudimas.Name = "labelPensijuDraudimas";
-            this.labelPensijuDraudimas.Size = new System.Drawing.Size(100, 23);
-            this.labelPensijuDraudimas.TabIndex = 42;
-            this.labelPensijuDraudimas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPension.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelPension.Location = new System.Drawing.Point(297, 243);
+            this.labelPension.Name = "labelPension";
+            this.labelPension.Size = new System.Drawing.Size(100, 23);
+            this.labelPension.TabIndex = 42;
+            this.labelPension.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // labelSveikatosDraudimas
+            // labelInsurance
             // 
-            this.labelSveikatosDraudimas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelSveikatosDraudimas.Location = new System.Drawing.Point(297, 211);
-            this.labelSveikatosDraudimas.Name = "labelSveikatosDraudimas";
-            this.labelSveikatosDraudimas.Size = new System.Drawing.Size(100, 23);
-            this.labelSveikatosDraudimas.TabIndex = 41;
-            this.labelSveikatosDraudimas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelInsurance.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelInsurance.Location = new System.Drawing.Point(297, 211);
+            this.labelInsurance.Name = "labelInsurance";
+            this.labelInsurance.Size = new System.Drawing.Size(100, 23);
+            this.labelInsurance.TabIndex = 41;
+            this.labelInsurance.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // labelDarboVietosKaina
+            // labelWorkPrice
             // 
-            this.labelDarboVietosKaina.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelDarboVietosKaina.Location = new System.Drawing.Point(297, 307);
-            this.labelDarboVietosKaina.Name = "labelDarboVietosKaina";
-            this.labelDarboVietosKaina.Size = new System.Drawing.Size(100, 23);
-            this.labelDarboVietosKaina.TabIndex = 40;
-            this.labelDarboVietosKaina.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelWorkPrice.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelWorkPrice.Location = new System.Drawing.Point(297, 307);
+            this.labelWorkPrice.Name = "labelWorkPrice";
+            this.labelWorkPrice.Size = new System.Drawing.Size(100, 23);
+            this.labelWorkPrice.TabIndex = 40;
+            this.labelWorkPrice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // labelPajamuMokestis
+            // labelIncome
             // 
-            this.labelPajamuMokestis.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelPajamuMokestis.Location = new System.Drawing.Point(297, 179);
-            this.labelPajamuMokestis.Name = "labelPajamuMokestis";
-            this.labelPajamuMokestis.Size = new System.Drawing.Size(100, 23);
-            this.labelPajamuMokestis.TabIndex = 37;
-            this.labelPajamuMokestis.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelIncome.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelIncome.Location = new System.Drawing.Point(297, 179);
+            this.labelIncome.Name = "labelIncome";
+            this.labelIncome.Size = new System.Drawing.Size(100, 23);
+            this.labelIncome.TabIndex = 37;
+            this.labelIncome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // gBoxAutorines
             // 
@@ -295,7 +295,7 @@
             this.gBoxAutorines.Controls.Add(this.label35);
             this.gBoxAutorines.Controls.Add(this.label36);
             this.gBoxAutorines.Controls.Add(this.labelAutorines);
-            this.gBoxAutorines.Controls.Add(this.tBoxPajamosAutorines);
+            this.gBoxAutorines.Controls.Add(this.tBoxCopyHands);
             this.gBoxAutorines.Controls.Add(this.bSkaiciuotiAutorines);
             this.gBoxAutorines.Controls.Add(this.labelAutorinesIRankas);
             this.gBoxAutorines.Controls.Add(this.labelAutorinesUzsakSuma);
@@ -345,12 +345,13 @@
             this.labelAutorines.TabIndex = 28;
             this.labelAutorines.Text = "Iveskite pajamas nurodytas autorinėje sutartyje:";
             // 
-            // tBoxPajamosAutorines
+            // tBoxCopyHands
             // 
-            this.tBoxPajamosAutorines.Location = new System.Drawing.Point(367, 19);
-            this.tBoxPajamosAutorines.Name = "tBoxPajamosAutorines";
-            this.tBoxPajamosAutorines.Size = new System.Drawing.Size(100, 26);
-            this.tBoxPajamosAutorines.TabIndex = 11;
+            this.tBoxCopyHands.Location = new System.Drawing.Point(367, 19);
+            this.tBoxCopyHands.Name = "tBoxCopyHands";
+            this.tBoxCopyHands.Size = new System.Drawing.Size(100, 26);
+            this.tBoxCopyHands.TabIndex = 11;
+            this.tBoxCopyHands.Text = "0";
             // 
             // bSkaiciuotiAutorines
             // 
@@ -464,23 +465,23 @@
             this.label9.TabIndex = 16;
             this.label9.Text = "Darbo vietos kaina";
             // 
-            // checkBoxPapildomaPensija
+            // checkBoxExtraH
             // 
-            this.checkBoxPapildomaPensija.AutoSize = true;
-            this.checkBoxPapildomaPensija.Location = new System.Drawing.Point(11, 43);
-            this.checkBoxPapildomaPensija.Name = "checkBoxPapildomaPensija";
-            this.checkBoxPapildomaPensija.Size = new System.Drawing.Size(287, 24);
-            this.checkBoxPapildomaPensija.TabIndex = 8;
-            this.checkBoxPapildomaPensija.Text = "Papildomas pensijos kaupimas +2%";
-            this.checkBoxPapildomaPensija.UseVisualStyleBackColor = true;
+            this.checkBoxExtraH.AutoSize = true;
+            this.checkBoxExtraH.Location = new System.Drawing.Point(11, 43);
+            this.checkBoxExtraH.Name = "checkBoxExtraH";
+            this.checkBoxExtraH.Size = new System.Drawing.Size(287, 24);
+            this.checkBoxExtraH.TabIndex = 8;
+            this.checkBoxExtraH.Text = "Papildomas pensijos kaupimas +2%";
+            this.checkBoxExtraH.UseVisualStyleBackColor = true;
             // 
-            // tBoxAtlyginimasAntPopieriaus
+            // tBoxOnPaper
             // 
-            this.tBoxAtlyginimasAntPopieriaus.Location = new System.Drawing.Point(297, 11);
-            this.tBoxAtlyginimasAntPopieriaus.Name = "tBoxAtlyginimasAntPopieriaus";
-            this.tBoxAtlyginimasAntPopieriaus.Size = new System.Drawing.Size(100, 26);
-            this.tBoxAtlyginimasAntPopieriaus.TabIndex = 7;
-            this.tBoxAtlyginimasAntPopieriaus.Text = "0";
+            this.tBoxOnPaper.Location = new System.Drawing.Point(297, 11);
+            this.tBoxOnPaper.Name = "tBoxOnPaper";
+            this.tBoxOnPaper.Size = new System.Drawing.Size(100, 26);
+            this.tBoxOnPaper.TabIndex = 7;
+            this.tBoxOnPaper.Text = "0";
             // 
             // label8
             // 
@@ -494,10 +495,10 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.label40);
-            this.tabPage2.Controls.Add(this.tBoxAutorinesIRankas);
+            this.tabPage2.Controls.Add(this.tBoxHandsCopy);
             this.tabPage2.Controls.Add(this.label15);
             this.tabPage2.Controls.Add(this.label14);
-            this.tabPage2.Controls.Add(this.labelAtlyginimasPopierius);
+            this.tabPage2.Controls.Add(this.labelOnPaper);
             this.tabPage2.Controls.Add(this.label16);
             this.tabPage2.Controls.Add(this.label17);
             this.tabPage2.Controls.Add(this.label18);
@@ -505,19 +506,19 @@
             this.tabPage2.Controls.Add(this.label20);
             this.tabPage2.Controls.Add(this.label38);
             this.tabPage2.Controls.Add(this.label39);
-            this.tabPage2.Controls.Add(this.labelDarbdavioMokesciaiP);
-            this.tabPage2.Controls.Add(this.labelPensijuDraudimasP);
-            this.tabPage2.Controls.Add(this.labelSveikatosDraudimasP);
-            this.tabPage2.Controls.Add(this.labelDarboVietosKainaP);
-            this.tabPage2.Controls.Add(this.labelPajamuMokestisP);
+            this.tabPage2.Controls.Add(this.labelEmployerTax);
+            this.tabPage2.Controls.Add(this.labelPesionP);
+            this.tabPage2.Controls.Add(this.labelInsuraceP);
+            this.tabPage2.Controls.Add(this.labelWorkPriceP);
+            this.tabPage2.Controls.Add(this.labelIncomeP);
             this.tabPage2.Controls.Add(this.bSkaiciuotiPopierius);
             this.tabPage2.Controls.Add(this.label45);
             this.tabPage2.Controls.Add(this.label46);
             this.tabPage2.Controls.Add(this.label47);
             this.tabPage2.Controls.Add(this.label48);
             this.tabPage2.Controls.Add(this.label49);
-            this.tabPage2.Controls.Add(this.checkBoxPapildomaPensijaP);
-            this.tabPage2.Controls.Add(this.tBoxAtlyginimasIRankas);
+            this.tabPage2.Controls.Add(this.checkBoxExtraP);
+            this.tabPage2.Controls.Add(this.tBoxInHands);
             this.tabPage2.Controls.Add(this.label50);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
@@ -527,170 +528,31 @@
             this.tabPage2.Text = "Atlyginimas ant popieriaus";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label37
+            // label40
             // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(371, 68);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(23, 20);
-            this.label37.TabIndex = 58;
-            this.label37.Text = "%";
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(548, 72);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(18, 20);
+            this.label40.TabIndex = 78;
+            this.label40.Text = "€";
             // 
-            // label27
+            // tBoxHandsCopy
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(371, 100);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(23, 20);
-            this.label27.TabIndex = 57;
-            this.label27.Text = "%";
+            this.tBoxHandsCopy.Location = new System.Drawing.Point(442, 69);
+            this.tBoxHandsCopy.Name = "tBoxHandsCopy";
+            this.tBoxHandsCopy.Size = new System.Drawing.Size(100, 26);
+            this.tBoxHandsCopy.TabIndex = 77;
+            this.tBoxHandsCopy.Text = "0";
             // 
-            // label26
+            // label15
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(973, 36);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(23, 20);
-            this.label26.TabIndex = 56;
-            this.label26.Text = "%";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(973, 68);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(23, 20);
-            this.label25.TabIndex = 55;
-            this.label25.Text = "%";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(973, 100);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(23, 20);
-            this.label24.TabIndex = 54;
-            this.label24.Text = "%";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(371, 36);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(23, 20);
-            this.label22.TabIndex = 53;
-            this.label22.Text = "%";
-            // 
-            // tBoxSveikatosDraudimasProc
-            // 
-            this.tBoxSveikatosDraudimasProc.Location = new System.Drawing.Point(265, 65);
-            this.tBoxSveikatosDraudimasProc.Name = "tBoxSveikatosDraudimasProc";
-            this.tBoxSveikatosDraudimasProc.Size = new System.Drawing.Size(100, 26);
-            this.tBoxSveikatosDraudimasProc.TabIndex = 2;
-            this.tBoxSveikatosDraudimasProc.Text = "0";
-            // 
-            // tBoxPensijuDraudimasProc
-            // 
-            this.tBoxPensijuDraudimasProc.Location = new System.Drawing.Point(265, 97);
-            this.tBoxPensijuDraudimasProc.Name = "tBoxPensijuDraudimasProc";
-            this.tBoxPensijuDraudimasProc.Size = new System.Drawing.Size(100, 26);
-            this.tBoxPensijuDraudimasProc.TabIndex = 3;
-            this.tBoxPensijuDraudimasProc.Text = "0";
-            // 
-            // tBoxDarbdavioMokesciaiProc
-            // 
-            this.tBoxDarbdavioMokesciaiProc.Location = new System.Drawing.Point(867, 33);
-            this.tBoxDarbdavioMokesciaiProc.Name = "tBoxDarbdavioMokesciaiProc";
-            this.tBoxDarbdavioMokesciaiProc.Size = new System.Drawing.Size(100, 26);
-            this.tBoxDarbdavioMokesciaiProc.TabIndex = 4;
-            this.tBoxDarbdavioMokesciaiProc.Text = "0";
-            // 
-            // tBoxAutoriniaiMokesciaiProc
-            // 
-            this.tBoxAutoriniaiMokesciaiProc.Location = new System.Drawing.Point(867, 65);
-            this.tBoxAutoriniaiMokesciaiProc.Name = "tBoxAutoriniaiMokesciaiProc";
-            this.tBoxAutoriniaiMokesciaiProc.Size = new System.Drawing.Size(100, 26);
-            this.tBoxAutoriniaiMokesciaiProc.TabIndex = 5;
-            this.tBoxAutoriniaiMokesciaiProc.Text = "0";
-            // 
-            // tBoxUzsakovoMokesciaiProc
-            // 
-            this.tBoxUzsakovoMokesciaiProc.Location = new System.Drawing.Point(867, 97);
-            this.tBoxUzsakovoMokesciaiProc.Name = "tBoxUzsakovoMokesciaiProc";
-            this.tBoxUzsakovoMokesciaiProc.Size = new System.Drawing.Size(100, 26);
-            this.tBoxUzsakovoMokesciaiProc.TabIndex = 6;
-            this.tBoxUzsakovoMokesciaiProc.Text = "0";
-            // 
-            // tBoxPajamuProc
-            // 
-            this.tBoxPajamuProc.Location = new System.Drawing.Point(265, 33);
-            this.tBoxPajamuProc.Name = "tBoxPajamuProc";
-            this.tBoxPajamuProc.Size = new System.Drawing.Size(100, 26);
-            this.tBoxPajamuProc.TabIndex = 1;
-            this.tBoxPajamuProc.Text = "0";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 68);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(214, 20);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Sodra: Sveikatos Draudimas:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 100);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(238, 20);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Sodra: Pensijų ir soc. draudimas:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(614, 36);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(210, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Sodra: Darbdavio mokesčiai:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(614, 68);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(155, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Autoriaus mokesčiai:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(614, 100);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(157, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Užsakovo mokesčiai:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 36);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Pajamų mokestis:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(311, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Proc. nustatymas mokesčių apskaiciavimui:";
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(9, 72);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(365, 20);
+            this.label15.TabIndex = 76;
+            this.label15.Text = "+ atlyginimas gautas į rankas per autorines sutartis";
             // 
             // label14
             // 
@@ -701,15 +563,15 @@
             this.label14.TabIndex = 75;
             this.label14.Text = "€";
             // 
-            // labelAtlyginimasPopierius
+            // labelOnPaper
             // 
-            this.labelAtlyginimasPopierius.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelAtlyginimasPopierius.ForeColor = System.Drawing.Color.ForestGreen;
-            this.labelAtlyginimasPopierius.Location = new System.Drawing.Point(442, 172);
-            this.labelAtlyginimasPopierius.Name = "labelAtlyginimasPopierius";
-            this.labelAtlyginimasPopierius.Size = new System.Drawing.Size(100, 23);
-            this.labelAtlyginimasPopierius.TabIndex = 74;
-            this.labelAtlyginimasPopierius.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelOnPaper.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelOnPaper.ForeColor = System.Drawing.Color.ForestGreen;
+            this.labelOnPaper.Location = new System.Drawing.Point(442, 172);
+            this.labelOnPaper.Name = "labelOnPaper";
+            this.labelOnPaper.Size = new System.Drawing.Size(100, 23);
+            this.labelOnPaper.TabIndex = 74;
+            this.labelOnPaper.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label16
             // 
@@ -774,50 +636,50 @@
             this.label39.TabIndex = 67;
             this.label39.Text = "€";
             // 
-            // labelDarbdavioMokesciaiP
+            // labelEmployerTax
             // 
-            this.labelDarbdavioMokesciaiP.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelDarbdavioMokesciaiP.Location = new System.Drawing.Point(442, 299);
-            this.labelDarbdavioMokesciaiP.Name = "labelDarbdavioMokesciaiP";
-            this.labelDarbdavioMokesciaiP.Size = new System.Drawing.Size(100, 23);
-            this.labelDarbdavioMokesciaiP.TabIndex = 66;
-            this.labelDarbdavioMokesciaiP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelEmployerTax.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelEmployerTax.Location = new System.Drawing.Point(442, 299);
+            this.labelEmployerTax.Name = "labelEmployerTax";
+            this.labelEmployerTax.Size = new System.Drawing.Size(100, 23);
+            this.labelEmployerTax.TabIndex = 66;
+            this.labelEmployerTax.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // labelPensijuDraudimasP
+            // labelPesionP
             // 
-            this.labelPensijuDraudimasP.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelPensijuDraudimasP.Location = new System.Drawing.Point(442, 267);
-            this.labelPensijuDraudimasP.Name = "labelPensijuDraudimasP";
-            this.labelPensijuDraudimasP.Size = new System.Drawing.Size(100, 23);
-            this.labelPensijuDraudimasP.TabIndex = 65;
-            this.labelPensijuDraudimasP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelPesionP.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelPesionP.Location = new System.Drawing.Point(442, 267);
+            this.labelPesionP.Name = "labelPesionP";
+            this.labelPesionP.Size = new System.Drawing.Size(100, 23);
+            this.labelPesionP.TabIndex = 65;
+            this.labelPesionP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // labelSveikatosDraudimasP
+            // labelInsuraceP
             // 
-            this.labelSveikatosDraudimasP.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelSveikatosDraudimasP.Location = new System.Drawing.Point(442, 235);
-            this.labelSveikatosDraudimasP.Name = "labelSveikatosDraudimasP";
-            this.labelSveikatosDraudimasP.Size = new System.Drawing.Size(100, 23);
-            this.labelSveikatosDraudimasP.TabIndex = 64;
-            this.labelSveikatosDraudimasP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelInsuraceP.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelInsuraceP.Location = new System.Drawing.Point(442, 235);
+            this.labelInsuraceP.Name = "labelInsuraceP";
+            this.labelInsuraceP.Size = new System.Drawing.Size(100, 23);
+            this.labelInsuraceP.TabIndex = 64;
+            this.labelInsuraceP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // labelDarboVietosKainaP
+            // labelWorkPriceP
             // 
-            this.labelDarboVietosKainaP.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelDarboVietosKainaP.Location = new System.Drawing.Point(442, 331);
-            this.labelDarboVietosKainaP.Name = "labelDarboVietosKainaP";
-            this.labelDarboVietosKainaP.Size = new System.Drawing.Size(100, 23);
-            this.labelDarboVietosKainaP.TabIndex = 63;
-            this.labelDarboVietosKainaP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelWorkPriceP.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelWorkPriceP.Location = new System.Drawing.Point(442, 331);
+            this.labelWorkPriceP.Name = "labelWorkPriceP";
+            this.labelWorkPriceP.Size = new System.Drawing.Size(100, 23);
+            this.labelWorkPriceP.TabIndex = 63;
+            this.labelWorkPriceP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // labelPajamuMokestisP
+            // labelIncomeP
             // 
-            this.labelPajamuMokestisP.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelPajamuMokestisP.Location = new System.Drawing.Point(442, 203);
-            this.labelPajamuMokestisP.Name = "labelPajamuMokestisP";
-            this.labelPajamuMokestisP.Size = new System.Drawing.Size(100, 23);
-            this.labelPajamuMokestisP.TabIndex = 62;
-            this.labelPajamuMokestisP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelIncomeP.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelIncomeP.Location = new System.Drawing.Point(442, 203);
+            this.labelIncomeP.Name = "labelIncomeP";
+            this.labelIncomeP.Size = new System.Drawing.Size(100, 23);
+            this.labelIncomeP.TabIndex = 62;
+            this.labelIncomeP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // bSkaiciuotiPopierius
             // 
@@ -874,23 +736,23 @@
             this.label49.TabIndex = 57;
             this.label49.Text = "Darbo vietos kaina";
             // 
-            // checkBoxPapildomaPensijaP
+            // checkBoxExtraP
             // 
-            this.checkBoxPapildomaPensijaP.AutoSize = true;
-            this.checkBoxPapildomaPensijaP.Location = new System.Drawing.Point(13, 45);
-            this.checkBoxPapildomaPensijaP.Name = "checkBoxPapildomaPensijaP";
-            this.checkBoxPapildomaPensijaP.Size = new System.Drawing.Size(287, 24);
-            this.checkBoxPapildomaPensijaP.TabIndex = 54;
-            this.checkBoxPapildomaPensijaP.Text = "Papildomas pensijos kaupimas +2%";
-            this.checkBoxPapildomaPensijaP.UseVisualStyleBackColor = true;
+            this.checkBoxExtraP.AutoSize = true;
+            this.checkBoxExtraP.Location = new System.Drawing.Point(13, 45);
+            this.checkBoxExtraP.Name = "checkBoxExtraP";
+            this.checkBoxExtraP.Size = new System.Drawing.Size(287, 24);
+            this.checkBoxExtraP.TabIndex = 54;
+            this.checkBoxExtraP.Text = "Papildomas pensijos kaupimas +2%";
+            this.checkBoxExtraP.UseVisualStyleBackColor = true;
             // 
-            // tBoxAtlyginimasIRankas
+            // tBoxInHands
             // 
-            this.tBoxAtlyginimasIRankas.Location = new System.Drawing.Point(442, 16);
-            this.tBoxAtlyginimasIRankas.Name = "tBoxAtlyginimasIRankas";
-            this.tBoxAtlyginimasIRankas.Size = new System.Drawing.Size(100, 26);
-            this.tBoxAtlyginimasIRankas.TabIndex = 53;
-            this.tBoxAtlyginimasIRankas.Text = "0";
+            this.tBoxInHands.Location = new System.Drawing.Point(442, 16);
+            this.tBoxInHands.Name = "tBoxInHands";
+            this.tBoxInHands.Size = new System.Drawing.Size(100, 26);
+            this.tBoxInHands.TabIndex = 53;
+            this.tBoxInHands.Text = "0";
             // 
             // label50
             // 
@@ -901,31 +763,170 @@
             this.label50.TabIndex = 56;
             this.label50.Text = "Įveskite atlyginimą į rankas";
             // 
-            // label15
+            // label37
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(9, 72);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(365, 20);
-            this.label15.TabIndex = 76;
-            this.label15.Text = "+ atlyginimas gautas į rankas per autorines sutartis";
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(371, 68);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(23, 20);
+            this.label37.TabIndex = 58;
+            this.label37.Text = "%";
             // 
-            // tBoxAutorinesIRankas
+            // label27
             // 
-            this.tBoxAutorinesIRankas.Location = new System.Drawing.Point(442, 69);
-            this.tBoxAutorinesIRankas.Name = "tBoxAutorinesIRankas";
-            this.tBoxAutorinesIRankas.Size = new System.Drawing.Size(100, 26);
-            this.tBoxAutorinesIRankas.TabIndex = 77;
-            this.tBoxAutorinesIRankas.Text = "0";
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(371, 100);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(23, 20);
+            this.label27.TabIndex = 57;
+            this.label27.Text = "%";
             // 
-            // label40
+            // label26
             // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(548, 72);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(18, 20);
-            this.label40.TabIndex = 78;
-            this.label40.Text = "€";
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(973, 36);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(23, 20);
+            this.label26.TabIndex = 56;
+            this.label26.Text = "%";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(973, 68);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(23, 20);
+            this.label25.TabIndex = 55;
+            this.label25.Text = "%";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(973, 100);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(23, 20);
+            this.label24.TabIndex = 54;
+            this.label24.Text = "%";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(371, 36);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(23, 20);
+            this.label22.TabIndex = 53;
+            this.label22.Text = "%";
+            // 
+            // tBoxInsurance
+            // 
+            this.tBoxInsurance.Location = new System.Drawing.Point(265, 65);
+            this.tBoxInsurance.Name = "tBoxInsurance";
+            this.tBoxInsurance.Size = new System.Drawing.Size(100, 26);
+            this.tBoxInsurance.TabIndex = 2;
+            this.tBoxInsurance.Text = "0";
+            // 
+            // tBoxPension
+            // 
+            this.tBoxPension.Location = new System.Drawing.Point(265, 97);
+            this.tBoxPension.Name = "tBoxPension";
+            this.tBoxPension.Size = new System.Drawing.Size(100, 26);
+            this.tBoxPension.TabIndex = 3;
+            this.tBoxPension.Text = "0";
+            // 
+            // tBoxEmploTax
+            // 
+            this.tBoxEmploTax.Location = new System.Drawing.Point(867, 33);
+            this.tBoxEmploTax.Name = "tBoxEmploTax";
+            this.tBoxEmploTax.Size = new System.Drawing.Size(100, 26);
+            this.tBoxEmploTax.TabIndex = 4;
+            this.tBoxEmploTax.Text = "0";
+            // 
+            // tBoxCopyTax
+            // 
+            this.tBoxCopyTax.Location = new System.Drawing.Point(867, 65);
+            this.tBoxCopyTax.Name = "tBoxCopyTax";
+            this.tBoxCopyTax.Size = new System.Drawing.Size(100, 26);
+            this.tBoxCopyTax.TabIndex = 5;
+            this.tBoxCopyTax.Text = "0";
+            // 
+            // tBoxCopyOrder
+            // 
+            this.tBoxCopyOrder.Location = new System.Drawing.Point(867, 97);
+            this.tBoxCopyOrder.Name = "tBoxCopyOrder";
+            this.tBoxCopyOrder.Size = new System.Drawing.Size(100, 26);
+            this.tBoxCopyOrder.TabIndex = 6;
+            this.tBoxCopyOrder.Text = "0";
+            // 
+            // tBoxIncome
+            // 
+            this.tBoxIncome.Location = new System.Drawing.Point(265, 33);
+            this.tBoxIncome.Name = "tBoxIncome";
+            this.tBoxIncome.Size = new System.Drawing.Size(100, 26);
+            this.tBoxIncome.TabIndex = 1;
+            this.tBoxIncome.Text = "0";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(9, 68);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(214, 20);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Sodra: Sveikatos Draudimas:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(9, 100);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(238, 20);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Sodra: Pensijų ir soc. draudimas:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(614, 36);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(210, 20);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Sodra: Darbdavio mokesčiai:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(614, 68);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(155, 20);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Autoriaus mokesčiai:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(614, 100);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(157, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Užsakovo mokesčiai:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 36);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(133, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Pajamų mokestis:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(311, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Proc. nustatymas mokesčių apskaiciavimui:";
             // 
             // Atlyginimo_Skaiciuokle
             // 
@@ -946,12 +947,12 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.tBoxPajamuProc);
-            this.Controls.Add(this.tBoxUzsakovoMokesciaiProc);
-            this.Controls.Add(this.tBoxAutoriniaiMokesciaiProc);
-            this.Controls.Add(this.tBoxDarbdavioMokesciaiProc);
-            this.Controls.Add(this.tBoxPensijuDraudimasProc);
-            this.Controls.Add(this.tBoxSveikatosDraudimasProc);
+            this.Controls.Add(this.tBoxIncome);
+            this.Controls.Add(this.tBoxCopyOrder);
+            this.Controls.Add(this.tBoxCopyTax);
+            this.Controls.Add(this.tBoxEmploTax);
+            this.Controls.Add(this.tBoxPension);
+            this.Controls.Add(this.tBoxInsurance);
             this.Name = "Atlyginimo_Skaiciuokle";
             this.Text = "Atlyginimo Skaičiuoklė";
             this.tabControl1.ResumeLayout(false);
@@ -972,7 +973,7 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.GroupBox gBoxAutorines;
         private System.Windows.Forms.Label labelAutorines;
-        private System.Windows.Forms.TextBox tBoxPajamosAutorines;
+        private System.Windows.Forms.TextBox tBoxCopyHands;
         private System.Windows.Forms.Button bSkaiciuotiAutorines;
         private System.Windows.Forms.Label labelAutorinesIRankas;
         private System.Windows.Forms.Label labelAutorinesUzsakovoSuma;
@@ -983,15 +984,15 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.CheckBox checkBoxPapildomaPensija;
-        private System.Windows.Forms.TextBox tBoxAtlyginimasAntPopieriaus;
+        private System.Windows.Forms.CheckBox checkBoxExtraH;
+        private System.Windows.Forms.TextBox tBoxOnPaper;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox tBoxSveikatosDraudimasProc;
-        private System.Windows.Forms.TextBox tBoxPensijuDraudimasProc;
-        private System.Windows.Forms.TextBox tBoxDarbdavioMokesciaiProc;
-        private System.Windows.Forms.TextBox tBoxAutoriniaiMokesciaiProc;
-        private System.Windows.Forms.TextBox tBoxUzsakovoMokesciaiProc;
-        private System.Windows.Forms.TextBox tBoxPajamuProc;
+        private System.Windows.Forms.TextBox tBoxInsurance;
+        private System.Windows.Forms.TextBox tBoxPension;
+        private System.Windows.Forms.TextBox tBoxEmploTax;
+        private System.Windows.Forms.TextBox tBoxCopyTax;
+        private System.Windows.Forms.TextBox tBoxCopyOrder;
+        private System.Windows.Forms.TextBox tBoxIncome;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -1006,18 +1007,18 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label labelDarbdavioMokesciaiSodrai;
-        private System.Windows.Forms.Label labelPensijuDraudimas;
-        private System.Windows.Forms.Label labelSveikatosDraudimas;
-        private System.Windows.Forms.Label labelDarboVietosKaina;
-        private System.Windows.Forms.Label labelPajamuMokestis;
+        private System.Windows.Forms.Label labelEmplTax;
+        private System.Windows.Forms.Label labelPension;
+        private System.Windows.Forms.Label labelInsurance;
+        private System.Windows.Forms.Label labelWorkPrice;
+        private System.Windows.Forms.Label labelIncome;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label labelAutorinesUzsakSuma;
         private System.Windows.Forms.Label labelAutorinesRankas;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label labelAtlyginimasIRankas;
+        private System.Windows.Forms.Label labelInHands;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label27;
@@ -1026,10 +1027,10 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox tBoxAutorinesIRankas;
+        private System.Windows.Forms.TextBox tBoxHandsCopy;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label labelAtlyginimasPopierius;
+        private System.Windows.Forms.Label labelOnPaper;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
@@ -1037,19 +1038,19 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label labelDarbdavioMokesciaiP;
-        private System.Windows.Forms.Label labelPensijuDraudimasP;
-        private System.Windows.Forms.Label labelSveikatosDraudimasP;
-        private System.Windows.Forms.Label labelDarboVietosKainaP;
-        private System.Windows.Forms.Label labelPajamuMokestisP;
+        private System.Windows.Forms.Label labelEmployerTax;
+        private System.Windows.Forms.Label labelPesionP;
+        private System.Windows.Forms.Label labelInsuraceP;
+        private System.Windows.Forms.Label labelWorkPriceP;
+        private System.Windows.Forms.Label labelIncomeP;
         private System.Windows.Forms.Button bSkaiciuotiPopierius;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.CheckBox checkBoxPapildomaPensijaP;
-        private System.Windows.Forms.TextBox tBoxAtlyginimasIRankas;
+        private System.Windows.Forms.CheckBox checkBoxExtraP;
+        private System.Windows.Forms.TextBox tBoxInHands;
         private System.Windows.Forms.Label label50;
     }
 }
