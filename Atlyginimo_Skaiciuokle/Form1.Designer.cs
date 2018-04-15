@@ -56,7 +56,7 @@
             this.labelAuthorInHands = new System.Windows.Forms.Label();
             this.labelAutorinesUzsakovoSuma = new System.Windows.Forms.Label();
             this.bCountToHands = new System.Windows.Forms.Button();
-            this.checkBoxAutorines = new System.Windows.Forms.CheckBox();
+            this.checkBoxCopyright = new System.Windows.Forms.CheckBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -146,7 +146,7 @@
             this.tabPage1.Controls.Add(this.labelIncome);
             this.tabPage1.Controls.Add(this.gBoxCopyright);
             this.tabPage1.Controls.Add(this.bCountToHands);
-            this.tabPage1.Controls.Add(this.checkBoxAutorines);
+            this.tabPage1.Controls.Add(this.checkBoxCopyright);
             this.tabPage1.Controls.Add(this.label13);
             this.tabPage1.Controls.Add(this.label12);
             this.tabPage1.Controls.Add(this.label11);
@@ -412,16 +412,16 @@
             this.bCountToHands.UseVisualStyleBackColor = true;
             this.bCountToHands.Click += new System.EventHandler(this.bCountToHands_Click);
             // 
-            // checkBoxAutorines
+            // checkBoxCopyright
             // 
-            this.checkBoxAutorines.AutoSize = true;
-            this.checkBoxAutorines.Location = new System.Drawing.Point(615, 94);
-            this.checkBoxAutorines.Name = "checkBoxAutorines";
-            this.checkBoxAutorines.Size = new System.Drawing.Size(249, 24);
-            this.checkBoxAutorines.TabIndex = 10;
-            this.checkBoxAutorines.Text = "Pajamos per autorines sutartis";
-            this.checkBoxAutorines.UseVisualStyleBackColor = true;
-            this.checkBoxAutorines.CheckedChanged += new System.EventHandler(this.checkBox_Autorines_CheckedChanged);
+            this.checkBoxCopyright.AutoSize = true;
+            this.checkBoxCopyright.Location = new System.Drawing.Point(615, 94);
+            this.checkBoxCopyright.Name = "checkBoxCopyright";
+            this.checkBoxCopyright.Size = new System.Drawing.Size(249, 24);
+            this.checkBoxCopyright.TabIndex = 10;
+            this.checkBoxCopyright.Text = "Pajamos per autorines sutartis";
+            this.checkBoxCopyright.UseVisualStyleBackColor = true;
+            this.checkBoxCopyright.CheckedChanged += new System.EventHandler(this.checkBoxCopyright_CheckedChanged);
             // 
             // label13
             // 
@@ -1009,7 +1009,7 @@
         private System.Windows.Forms.Label labelAutorinesIRankas;
         private System.Windows.Forms.Label labelAutorinesUzsakovoSuma;
         private System.Windows.Forms.Button bCountToHands;
-        private System.Windows.Forms.CheckBox checkBoxAutorines;
+        private System.Windows.Forms.CheckBox checkBoxCopyright;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;

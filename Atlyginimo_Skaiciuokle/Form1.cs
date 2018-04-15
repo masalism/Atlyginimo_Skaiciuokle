@@ -83,9 +83,9 @@ namespace Atlyginimo_Skaiciuokle
         private void bCountOnPaper_Click(object sender, EventArgs e)
         {
             //Istraukiami kintamaieji is textboxu, jei tusti = 0;
-            double inHandstbox = 0;
+            double inHandsTBox = 0;
             double copyInHands = 0;
-            double.TryParse(tBoxInHands.Text, out inHandstbox);
+            double.TryParse(tBoxInHands.Text, out inHandsTBox);
             double.TryParse(tBoxHandsCopy.Text, out copyInHands);
             double incomeProc, insuranceProc, pensionProc, employerTaxProc;
             GetPercentageTBox(out incomeProc, out insuranceProc, out pensionProc, out employerTaxProc);
@@ -97,14 +97,14 @@ namespace Atlyginimo_Skaiciuokle
             }
 
             //Mokesciu skaiciavimai ant popieriaus su autorinemis teisemis
-            if (copyInHands > 0 && inHandstbox > 0)
+            if (copyInHands > 0 && inHandsTBox > 0)
             {
                 double copyOnPaper = CalcOnPaper(copyInHands, incomeProc, insuranceProc, pensionProc);
                 double copyIncome = CalcTaxOnPaper(copyOnPaper, incomeProc);
                 double copyInsurance = CalcTaxOnPaper(copyOnPaper, insuranceProc);
                 double copyPension = CalcTaxOnPaper(copyOnPaper, pensionProc);
 
-                double onPaperWage = CalcOnPaper(inHandstbox, incomeProc, insuranceProc, pensionProc);
+                double onPaperWage = CalcOnPaper(inHandsTBox, incomeProc, insuranceProc, pensionProc);
                 double incomeWage = CalcTaxOnPaper(onPaperWage, incomeProc);
                 double insuranceWage = CalcTaxOnPaper(onPaperWage, insuranceProc);
                 double pensionWage = CalcTaxOnPaper(onPaperWage, pensionProc);
@@ -127,9 +127,9 @@ namespace Atlyginimo_Skaiciuokle
             }
 
             //tik ant popieriaus skaiciavimai
-            else if (inHandstbox > 0)
+            else if (inHandsTBox > 0)
             {
-                onPaper = CalcOnPaper(inHandstbox, incomeProc, insuranceProc, pensionProc);
+                onPaper = CalcOnPaper(inHandsTBox, incomeProc, insuranceProc, pensionProc);
                 incomeTax = CalcTaxOnPaper(onPaper, incomeProc);
                 insurance = CalcTaxOnPaper(onPaper, insuranceProc);
                 pension = CalcTaxOnPaper(onPaper, pensionProc);
@@ -176,24 +176,24 @@ namespace Atlyginimo_Skaiciuokle
         }
 
         //pasleptas autoriniu sutarciu langas ijungus programa
-        private void checkBox_Autorines_CheckedChanged(object sender, EventArgs e)
+        private void checkBoxCopyright_CheckedChanged(object sender, EventArgs e)
         {
             gBoxCopyright.Visible = false;
-            CheckState state = checkBoxAutorines.CheckState;
+            CheckState state = checkBoxCopyright.CheckState;
 
             switch (state)
             {
                 case CheckState.Checked:
-                {
-                    tBoxCopyTax.Visible = true;
-                    gBoxCopyright.Visible = true;
-                    break;
-                }
+                    {
+                        tBoxCopyTax.Visible = true;
+                        gBoxCopyright.Visible = true;
+                        break;
+                    }
                 case CheckState.Indeterminate:
                 case CheckState.Unchecked:
-                {
-                    break;
-                }
+                    {
+                        break;
+                    }
             }
         }
 
@@ -297,6 +297,6 @@ namespace Atlyginimo_Skaiciuokle
                 MessageBox.Show("Prašome vesti skaičius.");
                 tBoxHandsCopy.Text = "0";
             }
-        }  
+        }
     } 
 }
