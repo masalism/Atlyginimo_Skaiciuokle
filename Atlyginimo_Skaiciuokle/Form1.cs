@@ -170,7 +170,7 @@ namespace Atlyginimo_Skaiciuokle
         {
             return Math.Round((num1 * (num2 / 100)), 2);
         }
-        public double CalcOnPaper(double num1, double num2, double num3, double num4)
+        private double CalcOnPaper(double num1, double num2, double num3, double num4)
         {
             return Math.Round(num1 * (100 / (100 - (num2 + num3 + num4))), 2);
         }
