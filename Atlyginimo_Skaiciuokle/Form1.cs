@@ -124,6 +124,8 @@ namespace Atlyginimo_Skaiciuokle
                 incomeTax = CalcTaxOnPaper(onPaper, incomeProc);
                 insurance = CalcTaxOnPaper(onPaper, insuranceProc);
                 pension = CalcTaxOnPaper(onPaper, pensionProc);
+                employerTax = 0;
+                workPlacePrice = 0;
             }
 
             //tik ant popieriaus skaiciavimai
