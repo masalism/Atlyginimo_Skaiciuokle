@@ -185,7 +185,6 @@ namespace Atlyginimo_Skaiciuokle
             {
                 case CheckState.Checked:
                 {
-                    tBoxCopyTax.Visible = true;
                     gBoxCopyright.Visible = true;
                     break;
                 }
